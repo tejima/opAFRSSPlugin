@@ -1,0 +1,19 @@
+◆opAFRSSPlugin 説明
+
+RSS情報をアクティビティフィードとして取り込むプラグイン
+
+
+◆セットアップ
+本プラグインを /pluginsディレクトリに展開する
+
+◆設定
+管理画面から、登録するRSSとアクティビティフィードするユーザーのIDを登録する。
+※現時点で１SNS最大６件まで
+
+◆TODO
+ここで管理
+https://github.com/tejima/opAFRSSPlugin/issues
+
+
+
+
