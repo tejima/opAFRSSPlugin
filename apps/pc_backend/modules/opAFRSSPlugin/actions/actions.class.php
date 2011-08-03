@@ -25,6 +25,16 @@ class opAFRSSPluginActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-    $this->forward('default', 'module');
+    $this->form = new opAFRSSPluginConfigForm();
+    if ($request->isMethod(sfWebRequest::POST))
+    {
+      $this->form->bind($request->getParameter('rss'));
+      if ($this->form->isValid())
+      {
+        $this->form->save();
+        $this->redirect('opAFRSSPlugin/index');
+      }
+    }
   }
 }
+
