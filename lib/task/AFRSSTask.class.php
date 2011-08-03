@@ -10,12 +10,6 @@ class AFRSSTask extends sfBaseTask
     $this->name             = 'AFRSS';
     $this->aliases          = array('zuniv.us-afrss');
     $this->briefDescription = '';
-    $this->detailedDescription = <<<EOF
-The [feed-reader|INFO] task does things.
-Call it with:
-
-  [php symfony socialagent:feed-reader [--env="..."] application|INFO]
-EOF;
 
   }
   protected function execute($arguments = array(), $options = array())
